@@ -78,7 +78,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost/goals/" + goalId, {
+      const response = await fetch("http://localhost:8080/goals/" + goalId, {
         method: "DELETE",
       });
 
