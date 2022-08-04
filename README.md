@@ -54,6 +54,7 @@
 1. MongoDB 서비스 도커화 하기
 2. Node 앱 도커화 하기
 3. React SPA 컨테이너로 옮기기
+   1. `React` 앱의 경우 실행할 때 `-it` 옵션으로 명령어로 상호작용하도록 설정해줘야 한다
 4. Docker network 구성하기
 5. Volume으로 MongoDB에 데이터 지속성 추가하기
 6. NodeJS 컨테이너의 볼륨, 바인딩 마운트 및 폴리싱(Polishing)
