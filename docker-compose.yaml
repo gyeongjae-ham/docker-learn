@@ -12,7 +12,24 @@ services:
       # Docker Compose를 사용하면 docker network를 자동으로 생성해서
       # 한 compose 안에 있는 컨테이너들에 적용해준다
 
-  # backend:
+  backend:
+    build: ./backend
+    # Dockerfile의 이름이 기본이 아닐경우 아래처럼 사용하면 된다
+    # build:
+    #   context: ./backend
+    #   dockerfile: Dockerfile
+    #   args: dockerfile에 빌드 변수가 있을 경우
+    #     some-arg: 1
+    ports:
+      - "8080:80"
+    volumes:
+      - logs:/app/logs
+      - ./backend:/app # 상대경로로 바인드 마운트할 수 있다.
+      - /app/node_modules
+    env_file:
+      - ./env/backend.env
+    depends_on:
+      - mongodb
 
   # frontend:
 
@@ -20,3 +37,4 @@ services:
 # named volume만 여기에 설정해 준다 - 익명이랑 바인드 마운트는 X
 volumes:
   data:
+  logs:
