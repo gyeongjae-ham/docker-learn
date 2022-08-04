@@ -51,6 +51,14 @@
 
 ### Docker로 다중 컨테이너 애플리케이션 구축하기
 
+1. MongoDB 서비스 도커화 하기
+2. Node 앱 도커화 하기
+3. React SPA 컨테이너로 옮기기
+4. Docker network 구성하기
+5. Volume으로 MongoDB에 데이터 지속성 추가하기
+6. NodeJS 컨테이너의 볼륨, 바인딩 마운트 및 폴리싱(Polishing)
+7. 바인드 마운트로 React 컨테이너에 대한 라이브 소스 업데이트 하기
+
 ### Dokcer Compose: 다중 컨테이너 오케스트레이션
 
 ### 유틸리티 컨테이너로 작업하기 & 컨테이너에서 명령 실행하기
