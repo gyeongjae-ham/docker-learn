@@ -84,6 +84,8 @@ app.delete("/goals/:id", async (req, res) => {
 });
 
 mongoose.connect(
+  // `mongodb://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@mongodb:27017/course-goals?authSource=admin`,
+  // 원래 mongo 유저 설정하고 위처럼 연결해야 하는데 뭔가 에러 발생해서 우선 유저 없애고 실행
   "mongodb://mongodb:27017/course-goals",
   {
     useNewUrlParser: true,
@@ -94,7 +96,7 @@ mongoose.connect(
       console.error("FAILED TO CONNECT TO MONGODB");
       console.error(err);
     } else {
-      console.log("CONNECTED TO MONGODB");
+      console.log("CONNECTED TO MONGODB!!!");
       app.listen(80);
     }
   }
