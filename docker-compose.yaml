@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  mongodb:
+    image: "mongo"
+    volumes:
+      - data:/data/db
+    # environment:
+    #   - MONGO_INITDB_ROOT_USERNAME: max
+    #   - MONGO_INITDB_ROOT_PASSWORD: secret
+    env_file:
+      - ./env/mongo.env
+      # Docker Compose를 사용하면 docker network를 자동으로 생성해서
+      # 한 compose 안에 있는 컨테이너들에 적용해준다
+
+  # backend:
+
+  # frontend:
+
+# named volume을 인식시켜줘야 한다
+# named volume만 여기에 설정해 준다 - 익명이랑 바인드 마운트는 X
+volumes:
+  data:
