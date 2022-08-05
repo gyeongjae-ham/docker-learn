@@ -2,7 +2,11 @@
 
 ## 목차
 
-### Docker image Container: Core building
+### 1. Docker install
+
+1. Install docker desktop
+
+### 2. Docker image Container: Core building
 
 1. 사전 빌드된 이미지 사용
 2. Nodejs 이미지 사용하기
@@ -21,7 +25,7 @@
     2. `docker cp {컨테이너네임}:복사하려는 파일 {복사하려는 위치}`
 11. 컨테이너와 이미지에 이름 지정 & 태그 지정하기
 
-### 데이터 관리 및 볼륨으로 작업하기
+### 3. 데이터 관리 및 볼륨으로 작업하기
 
 1. named 볼륨으로 구조하기
 2. 익명 볼륨 제거하기
@@ -43,7 +47,7 @@
 13. 환경변수 & 보안
 14. 빌드 인수 사용하기
 
-### 네트워킹: (교차) 컨테이너 통신
+### 4. 네트워킹: (교차) 컨테이너 통신
 
 1. 컨테이너 외부 API 통신
 2. 컨테이너와 로컬 호스트 통신
@@ -51,7 +55,7 @@
 4. 컨테이너 간 통신 - docker network
 5. Docker가 IP주소를 해결하는 방법
 
-### Docker로 다중 컨테이너 애플리케이션 구축하기
+### 5. Docker로 다중 컨테이너 애플리케이션 구축하기
 
 1. MongoDB 서비스 도커화 하기
 2. Node 앱 도커화 하기
@@ -62,7 +66,7 @@
 6. NodeJS 컨테이너의 볼륨, 바인딩 마운트 및 폴리싱(Polishing)
 7. 바인드 마운트로 React 컨테이너에 대한 라이브 소스 업데이트 하기
 
-### Dokcer Compose: 다중 컨테이너 오케스트레이션
+### 6. Dokcer Compose: 다중 컨테이너 오케스트레이션
 
 1. Docker-Compose : 무엇이며 왜 사용하는가
 2. Compose 파일 만들기
@@ -72,7 +76,7 @@
 6. 또 다른 컨테이너 추가하기
 7. 이미지 빌드 & 컨테이너 이름 이해하기
 
-### 유틸리티 컨테이너로 작업하기 & 컨테이너에서 명령 실행하기
+### 7. 유틸리티 컨테이너로 작업하기 & 컨테이너에서 명령 실행하기
 
 1. 유틸리티 컨테이너를 사용하는 이유?
 2. 컨테이너에서 명령을 실행하는 다양한 방법
@@ -81,20 +85,20 @@
 5. Docker Compose 사용
 6. 유틸리티 컨테이너, 권한 & Linux
 
-### Docker & 컨테이너 배포하기
+### 8. Docker & 컨테이너 배포하기
 
-### Docker & 컨테이너 요약
+### 9. Docker & 컨테이너 요약
 
 # Kubernetes
 
 ## 목차
 
-### Kubernetes 시작하기
+### 1. Kubernetes 시작하기
 
-### 실전 Kubernetes - 핵심 개념 알아보기
+### 2. 실전 Kubernetes - 핵심 개념 알아보기
 
-### Kubernetes로 데이터 & 볼륨 관리하기
+### 3. Kubernetes로 데이터 & 볼륨 관리하기
 
-### Kubernetes 네트워킹
+### 4. Kubernetes 네트워킹
 
-### Kubernetes 배포
+### 5. Kubernetes 배포
