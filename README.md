@@ -85,9 +85,23 @@
 5. Docker Compose 사용
 6. 유틸리티 컨테이너, 권한 & Linux
 
-### 8. Docker & 컨테이너 배포하기
+### 8. 더 복잡한 설정: Laravel & PHP 도커화 프로젝트
 
-### 9. Docker & 컨테이너 요약
+1. Target 설정
+2. Nginx(웹 서버) 컨테이너 추가
+3. PHP 컨테이너 추가
+4. MySQL 컨테이너 추가
+5. Composer 유틸리티 컨테이너 추가
+6. Composer 유틸리티 컨테이너로 Laravel 앱 만들기
+7. 오류 수정하기
+8. 일부 Docker Compose 서비스만 구동하기
+9. 더 많은 유틸리티 컨테이너 추가하기
+10. Dockerfile이 있거나, 없는 Docker Compose
+11. 바인드 마운트와 COPY - 언제 뭘 써야 하는지
+
+### 9. Docker & 컨테이너 배포하기
+
+### 10. Docker & 컨테이너 요약
 
 # Kubernetes
 
