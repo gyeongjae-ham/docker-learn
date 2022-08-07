@@ -125,6 +125,15 @@
 
 ### 1. Kubernetes 시작하기
 
+1. 수동 배포의 더 많은 문제점들
+2. 왜 Kubernetes인가?
+3. Kubernetes가 정확히 무엇인가
+4. Kubernetes: 아키텍쳐 & 핵심 개념
+5. Kubernetes는 인프라를 관리하지 않습니다
+6. 워커 노드 자세히 살펴보기
+7. 마스터 노드 자세히 살펴보기
+8. Kubernetes Core Concepts
+
 ### 2. 실전 Kubernetes - 핵심 개념 알아보기
 
 ### 3. Kubernetes로 데이터 & 볼륨 관리하기
