@@ -17,9 +17,10 @@ spec:
       containers:
         - name: second-node
           image: hgj0619/kub-first-app:2
-          # resources:
-          #   limits:
-          #     memory: "128Mi"
-          #     cpu: "500m"
-          # ports:
-          #   - containerPort: <Port>
+          imagePullPolicy: Always
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            initialDelaySeconds: 5

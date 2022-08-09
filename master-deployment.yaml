@@ -20,8 +20,11 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchExpressions:
-      - { key: app, operator: In, values: [second-app, first-app] }
+    matchLabels:
+      app: second-app
+      tier: backend
+    # matchExpressions:
+    #   - { key: app, operator: In, values: [second-app, first-app] }
   template:
     metadata:
       labels:
