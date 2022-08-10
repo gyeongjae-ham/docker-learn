@@ -136,7 +136,40 @@
 
 ### 2. 실전 Kubernetes - 핵심 개념 알아보기
 
+1. Kubernetes 객체(리소스) 이해하기
+2. Deployment 객체(리소스)
+3. Deployment - 명령적 접근 방식
+4. kubectl 작동 배경
+5. Service 객체(리소스)
+6. Service로 Deployment 노출하기
+7. 컨테이너 재시작
+8. 실제 스케일링
+9. Deployment 업데이트 하기
+10. Deployment 롤백 & 히스토리
+11. 명령적 접근방식 vs 선언적 접근방식
+12. Pod와 컨테이너 사양 추가
+13. Label 및 Selector로 작업하기
+14. 선언적으로 Service 만들기
+15. 리소스 업데이트 & 삭제
+16. 다중 vs 단일 Config 파일
+17. Label & Selector에 대한 추가 정보
+18. Liveness Probes
+
 ### 3. Kubernetes로 데이터 & 볼륨 관리하기
+
+1. Kubernetes 볼륨
+2. Kubernetes 볼륨 - 이론 & Docker와 비교
+3. 새 Deployment & Service 만들기
+4. Kubernetes 볼륨 시작하기
+5. Kubernetes 볼륨 - emptyDir 유형
+6. Kubernetes 볼륨 - hostPath 유형
+7. CSI 볼륨 유형 이해하기
+8. 볼륨에서 영구(Persistent) 볼륨으로
+9. 영구 볼륨 정의하기
+10. 영구 볼륨 클레임 생성하기
+11. 영구 볼륨 클레임 사용하기
+12. 볼륨 vs 영구 볼륨
+13. 환경 변수 & ConfigMaps
 
 ### 4. Kubernetes 네트워킹
 
