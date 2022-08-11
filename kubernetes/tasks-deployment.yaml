@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tasks-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tasks
+  template:
+    metadata:
+      labels:
+        app: tasks
+    spec:
+      containers:
+        - name: tasks
+          image: hgj0619/kub-demo-tasks:latest
+          env:
+            - name: AUTH_ADDRESS
+              value: "auth-service.default" # coreDns 사용하기 serviceName.namespace
+            - name: TASKS_FOLDER
+              value: tasks
+              # value: "10.103.15.33"
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
