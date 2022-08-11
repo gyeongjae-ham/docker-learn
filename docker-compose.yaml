@@ -4,6 +4,7 @@ services:
     build: ./auth-api
     environment:
       AUTH_ADDRESS: auth
+      AUTH_SERVICE_SERVICE_HOST: auth
   users:
     build: ./users-api
     ports:
