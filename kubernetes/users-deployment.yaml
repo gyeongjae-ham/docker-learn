@@ -14,4 +14,17 @@ spec:
     spec:
       containers:
         - name: users
-          image: hgj0619/kub-demo-users
+          image: hgj0619/kub-demo-users:latest
+          env:
+            - name: AUTH_ADDRESS
+              value: localhost
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+        - name: auth
+          image: hgj0619/kub-demo-auth:latest
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
