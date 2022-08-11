@@ -17,7 +17,7 @@ spec:
           image: hgj0619/kub-demo-users:latest
           env:
             - name: AUTH_ADDRESS
-              value: localhost
+              value: "10.103.15.33"
           resources:
             limits:
               memory: "128Mi"
