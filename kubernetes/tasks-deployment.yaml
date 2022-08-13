@@ -17,11 +17,7 @@ spec:
           image: hgj0619/kub-demo-tasks:latest
           env:
             - name: AUTH_ADDRESS
-              value: "auth-service.default" # coreDns 사용하기 serviceName.namespace
+              # value: "10.99.104.252"
+              value: "auth-service.default"
             - name: TASKS_FOLDER
               value: tasks
-              # value: "10.103.15.33"
-          resources:
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
